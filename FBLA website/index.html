@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FBLA Website</title>
+		<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet"> 		
+		<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet"> 
+		<link href="css/normalize.css" rel="stylesheet" type="text/css"> 
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/responsive.css" rel="stylesheet" type="text/css">
+		<script src="https://use.fontawesome.com/4e54dbf978.js"></script>
+	</head>
+	<body>
+	
+		<div id="wrapper">
+			<header>
+				<a href="index.html"><img id="logo" src="img/nav-logo.png" alt="shhs fbla logo"></a>
+				<nav>
+					<ul>
+						<div class="dropdown">
+							<li><img id="nav-bars" src="img/navigation-bars.png" alt="nav bars"></li>
+							<div class="dropdown-content">
+								<ul>
+									<li><a href="index.html" class="active">Home</a></li>
+									<li><a href="events.html">Calendar</a></li>
+									<li><a href="competition.html">Competitions</a></li>
+									<li><a href="officers.html">FBLA Leaders</a></li>
+									<li><a href="gallery.html">Gallery</a></li>
+									<li><a href="signup.html">Sign up</a></li>
+								</ul>
+							</div>
+						</div>
+				</nav>
+			</header>
+			
+			<div id="title-wrapper" class="title-font">
+				<p>Future Business<br>Leaders of America</p>
+			</div>
+			
+			<!-- 5 Scrolling Large Pictures -->
+			
+			<div class="box" id="description-box">
+				<h2 class="title-font">Description</h2>
+				<p>
+					Scotts Hill Future Business Leaders of America is a student business organization that 
+					aims at helping members prepare for careers in business and related fields.  Through
+					our chapter, students are encouraged to work together to achieve common goals and 
+					compete on state and national levels.  We also enjoy serving our community together 
+					to help better not only the community but also to help better ourselves.
+				</p>
+			</div>  <!-- .box   #description-box -->
+			
+			<!-- 379x376 -->
+			<div class="slideshow-container">
+			  <div class="mySlides fade">
+				<!-- <div class="numbertext">1 / 3</div> -->
+				<img src="img/group_picture-small.png" style="width:100%">
+				<div class="text">The 2016 FBLA SLC attendees pose for a picture while on the way to Knoxville Aquarium.</div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<!-- <div class="numbertext">2 / 3</div> -->
+				<img src="img/2016-CBB.png" style="width:100%">
+				<div class="text">
+					2015-2016 SHHS FBLA donating profits from Charitable Business Battles to CASA.
+				</div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<!-- <div class="numbertext">3 / 3</div> -->
+				<img src="img/2016-pace4jace.png" style="width:100%">
+				<div class="text">Scotts Hill's FBLA joins with Zeta Delta to work charity for cystic fibrosis at an event called Pace for Jace.</div>
+			  </div>
+
+			<!-- needs work
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			-->
+			</div>
+			<br>
+
+			<!-- dot container, may be used later
+			<div style="text-align:center" class="dot-container">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+			-->
+			
+			<script>
+				/*
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				*/
+				var slideIndex = 0;
+				carousel();
+
+				function carousel() {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) {
+					  x[i].style.display = "none";
+					}
+					slideIndex++;
+					if (slideIndex > x.length) {slideIndex = 1}
+					x[slideIndex-1].style.display = "block";
+					setTimeout(carousel, 3000); // Change image every 2 seconds
+				}
+			</script>
+			
+			<div class="box" id="news-box">
+				<h2 class="title-font">News & Events</h2>
+				<ul>
+					<li>Students need to log community service hours with Mrs. Hughes</li>
+					<li>Students competing need to contact Mrs. Hughes</li>
+					<li>Regional Leadership Conference January 18, 2017</li>
+					<li>State Leadership Conference March 19-22, 2017</li>
+					<li>National Leadership Conference (Anaheim, CA) June 27, 2017</li>
+				</ul>
+				<p>*For other important information please contact Mrs. Hughes via phone or email</p>
+			</div> <!-- .box	#news-box -->
+			
+			<div id="footer">
+				<footer>
+					<div class="footer-container">
+					
+						<p>&copy; 2017 Scotts Hill FBLA</p>
+						<ul>
+							<li><a href="http://facebook.com"><i class="footer-icon fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="http://twitter.com"><i class="footer-icon fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="mailto:fblascottshillhighschool@gmail.com"><i class="footer-icon fa fa-envelope" aria-hideen="true"></i></a></li>
+							<li><a href="tel:731-602-6112"><i class="footer-icon fa fa-phone" aria-hidden="true"></a></i></li>
+						</ul>
+						
+						<br><br><br><br><br><br>
+						<p style="text-align: right;">Scotts Hill High School</p>
+						<p style="text-align: right;">7871 Highway 100</p>
+						<p style="text-align: right;">Reagan, TN 38368</p>
+						<p style="text-align: right;">Phone: (731) 602 - 6112</p>
+						
+					</div> <!-- .footer-container -->
+				</footer>
+			</div> <!-- #footer -->
+		</div> <!-- #wrapper -->
+	</body>
+</html>

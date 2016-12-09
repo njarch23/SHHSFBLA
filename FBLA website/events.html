@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FBLA Website</title>
+		<link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">  		
+		<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">		
+		<link href="css/normalize.css" rel="stylesheet" type="text/css"> 
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/responsive.css" rel="stylesheet" type="text/css">
+		<script src="https://use.fontawesome.com/4e54dbf978.js"></script>
+	</head>
+	<body>
+	
+		<div id="wrapper">
+			<header>
+				<a href="index.html"><img id="logo" src="img/nav-logo.png" alt="shhs fbla logo"></a>
+				<nav>
+					<ul>
+						<div class="dropdown">
+							<li><img id="nav-bars" src="img/navigation-bars.png" alt="nav bars"></li>
+							<div class="dropdown-content">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="events.html" class="active">Calendar</a></li>
+									<li><a href="competition.html">Competitions</a></li>
+									<li><a href="officers.html">FBLA Leaders</a></li>
+									<li><a href="gallery.html">Gallery</a></li>
+									<li><a href="signup.html">Sign up</a></li>
+								</ul>
+							</div>
+						</div>
+				</nav>
+			</header>
+			
+			<div id="title-wrapper" class="title-font">
+				<p>FBLA Calendar</p>
+			</div>			
+			
+			<div id="calendar-wrapper">
+				<div class="month">      
+					<ul>
+						<!-- month changing buttons
+						<li class="prev">❮</li>
+						<li class="next">❯</li>
+						-->
+						<li style="text-align:center" class="curly-font">
+							<span style="font-size:1.5em;" class="display">December</span><br>
+							<span style="font-size:1.5em;" class="display">2016</span>
+						</li>
+					</ul>
+				</div>
+
+				<ul class="weekdays">
+					<li>Mo</li>
+					<li>Tu</li>
+					<li>We</li>
+					<li>Th</li>
+					<li>Fr</li>
+					<li>Sa</li>
+					<li>Su</li>
+				</ul>
+
+				<ul class="days">  
+					<li></li>
+					<li></li>
+					<li></li>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li class="hasEvents">5
+					<span>Website Due</span></li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li class="active hasEvents">
+					<span class="display">9</span>
+					<span class="alwaysShow">Competition Deadline</span>
+					</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+					<li>15</li>
+					<li class="hasEvents">16
+					<span>Christmas Party</span></li>
+					<li>17</li>
+					<li>18</li>
+					<li>19</li>
+					<li>20</li>
+					<li>21</li>
+					<li>22</li>
+					<li>23</li>
+					<li class="hasEvents">24
+					<span>Christmas Eve</span></li>
+					<li class="hasEvents">25
+					<span>Christmas</span></li>
+					<li>26</li>
+					<li>27</li>
+					<li>28</li>
+					<li>29</li>
+					<li>30</li>
+					<li class="hasEvents">31
+					<span>New Year's Eve</span>
+					</li>
+				</ul>
+			</div>  <!-- #calendar-wrapper -->
+			
+			<div class="box" id="calendar-events">
+				<h2 class="title-font">Calendar Events</h2>
+				<ul>
+					<li>December 5th: Event website due</li>
+					<li>December 9th: Competition due</li>
+					<li>December 16th: Christmas Party</li>
+					<li>December 24th: Christmas Eve</li>
+					<li>December 25th: Christmas Day</li>
+					<li>December 31st: New Year's Eve</li>
+				</ul>
+			</div>
+			
+			
+			<div class="box" id="howtouse-box">
+				<h2 class="title-font">Calendar Use</h2>
+				<ul>
+					<li>The green date is the current day</li>
+					<li>Hover over dates to see events on that day</li>
+					<li>The blue dates have one or more events on that day</li>
+					<li>If the current day has events, they will be shown without hovering</li>
+				</ul>
+			</div> 
+			
+			
+			<div id="footer">
+				<footer>
+					<div class="footer-container">
+					
+						<p>&copy; 2017 Scotts Hill FBLA</p>
+						<ul>
+							<li><a href="http://facebook.com"><i class="footer-icon fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="http://twitter.com"><i class="footer-icon fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="mailto:fblascottshillhighschool@gmail.com"><i class="footer-icon fa fa-envelope" aria-hideen="true"></i></a></li>
+							<li><a href="tel:731-602-6112"><i class="footer-icon fa fa-phone" aria-hidden="true"></a></i></li>
+						</ul>
+						
+						<br><br><br><br><br><br>
+						<p style="text-align: right;">Scotts Hill High School</p>
+						<p style="text-align: right;">7871 Highway 100</p>
+						<p style="text-align: right;">Reagan, TN 38368</p>
+						<p style="text-align: right;">Phone: (731) 602 - 6112</p>
+						
+					</div> <!-- .footer-container -->
+				</footer>
+			</div> <!-- #footer -->
+		</div> <!-- #wrapper -->
+	</body>
+</html>

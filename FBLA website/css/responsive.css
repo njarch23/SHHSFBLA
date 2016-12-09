@@ -1,0 +1,219 @@
+/*
+HOME PAGE
+*/
+
+@media screen and (min-width: 900px) {
+	
+	#description-box {
+		width: 45%;
+		float: right;
+		margin: 2.5%;
+	}
+	
+	#news-box {
+		width: 45%;
+		float: right;
+		margin: 2.5%;
+	}
+	
+	.slideshow-container {
+		max-width: 45%;
+		float: left;
+		margin: 2.5%
+	}
+	
+	.next {
+		right: 5.5%;
+	}
+	
+}
+
+/*
+NAV
+*/
+
+@media screen and (min-width: 900px) {
+
+	nav {
+		width: 80%;
+		text-align: right;
+		margin-top: 5px;
+	}
+	
+	nav ul, nav ul ul {
+		max-width: 100%;
+	}
+	
+	#nav-bars {
+		display: none;
+	}
+	
+	.dropdown-content, .dropdown {
+		position: static;
+	}
+	
+	.dropdown-content {
+		display: inline;
+		list-style: none;
+		box-shadow: none;
+		padding: 0;
+	}
+	
+	.dropdown-content li {
+		display: inline;
+		margin-right: 5%;
+		font-size: 1.05em;
+	}
+	
+	.dropdown:hover .dropdown-content {
+		display: inline;
+		list-style: none;
+	}
+	
+}
+
+/* 
+CALENDAR 
+*/
+
+@media screen and (min-width: 760px) {
+	li:hover span {
+		display: block;
+	}
+	
+	.alwaysShow {
+		display: block;
+	}
+	
+	#calendar-events {
+		display: none;
+	}
+
+	#howtouse-box {
+		display: block;
+		width: 50%;
+		margin: 20px auto;
+	}
+	
+	#howtouse-box li {
+		text-align: center;
+	}
+	
+}
+
+/*
+COMPETITION
+*/
+
+@media screen and (min-width: 740px) {
+	.slideshow-container2 {
+		max-width: 45%;
+		float: left;
+		margin: 2.5%;
+	}
+	
+	/* if I use slide show dots 
+	.dot-container {
+		float: left;
+	}
+	*/
+	
+	.next2 {  /* my next button is always off a little */
+		right: 5.5%;
+	}
+	
+	#competitor-box {
+		display: block;
+		max-width: 45%;
+		float: right;
+		margin: 2.5%;
+		font-size: 1.05em;
+	}
+	
+	#extra-info {
+		display: block;
+		max-width: 45%;
+		float: right;
+		margin: 2.5%;
+		font-size: 1.05em;
+	}
+}
+
+/*
+Officers
+*/
+
+@media screen and (min-width: 700px) {
+
+	.officer-box {
+		max-width: 45%;
+		float: left;
+		margin: 2.5%;
+		font-size: 1.05em;
+	}
+	
+	.officer-box:nth-child(2n + 3) {
+		clear: left;
+	}
+	
+	/* 
+	GALLERY 
+	*/
+	#gallery li { 
+		width: 28.3333%;
+	}
+	
+	#gallery li:nth-child(4n) {
+		clear: left;
+	}
+	
+	#gallery li:nth-child(n + 5) {
+		clear: none;
+	}
+
+}
+
+/*
+SIGN UP 
+*/ 
+
+@media screen and (min-width: 700px) {
+	
+	/* needs work
+	#join-us {
+		background: radial-gradient( circle, red 30%, white 60%, blue 90%, white);
+	}
+	
+	form {
+		background: radial-gradient( circle, blue, white, red, transparent);
+	}
+	
+	*/
+	/* still needs work
+	#join-us {
+		background: linear-gradient(90deg, transparent, #06f, transparent);
+		max-width: 100%;
+		width: 100%;
+		margin: 20px auto;
+	}
+	
+	form {
+		background: linear-gradient(90deg, transparent, #06f, transparent);
+		max-width: 100%;
+		width: 100%;
+		margin: 20px auto;
+	}
+	*/
+	
+	#join-us {
+		width: 50%;
+		margin: 0 auto;
+	}
+	
+	form {
+		width: 50%;
+		margin: 20px auto;
+	}
+	
+	
+}

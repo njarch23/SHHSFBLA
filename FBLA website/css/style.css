@@ -1,0 +1,759 @@
+/*
+GENERAL
+*/
+
+* {
+	margin: 0;
+	top: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+} 
+
+body {
+	background: white;
+}
+
+h1 {
+	margin-top: 0;
+	color: black;
+	text-align: center;
+}
+
+.title-font {
+	font-family: 'Merienda One', sans-serif;
+	margin: 10px 0;
+	text-decoration: none;
+}
+
+p {
+	font-family: 'Old Standard TT', serif;
+}
+
+#underline {
+	text-decoration: underline;
+}
+
+/*
+HEADER & FOOTER
+*/
+
+header {
+	background: #ccc;
+}
+
+footer {
+	background: #003655;
+	color: white;
+	padding: 0 20px;
+}
+
+#footer {
+	clear: both;
+}
+
+/*
+HOME PAGE
+*/
+
+#gp-wrapper h1 {
+	color: white;
+}
+
+#logo {
+	padding-left: 5%;
+	display: inline;
+}
+
+.box {
+	max-width: 90%;
+	background: #06f;
+	margin: 20px 5%;
+	text-align: center;
+	color: white;
+	padding: 10px;
+	font-family: 'Old Standard TT', serif;
+}
+
+.box h2 {
+	text-decoration: underline;
+	text-align: center;
+}
+
+#description-box {
+}
+
+#news-box li {
+	text-align: left;
+	list-style: square;
+}
+
+#news-box p {
+	font-size: .85em;
+}
+
+#gp {
+	max-width: 100%;
+}
+
+#index-title {
+	text-align: center;
+}
+
+#title-wrapper {
+	text-align: center;
+	max-width: 100%;
+	display: block;
+	
+}
+
+#title-wrapper p {
+	font-weight: bold;
+	font-size: 2em;
+	font-family: 'Merienda One', sans-serif;
+	text-decoration: none;
+}
+
+
+
+
+/*
+NAVAGATION 
+*/
+
+nav {
+	display: inline-block;
+	float: right;
+	padding-right: 5%;
+	font-family: 'Boogaloo', serif;
+}
+
+nav ul li {
+	display: block;
+	float: center;
+}
+
+nav a{
+	color: blue;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #f33;
+	text-decoration: underline;
+}
+
+.active {
+	color: #333;
+}
+
+
+.dropdown {
+    position: relative;
+    display: block;
+	list-style: square;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #ccc;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	right: 0;
+	color: black;
+	list-style: square;
+	z-index: 1;
+}
+
+.dropdown-content li {
+	margin: 5px 0;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	list-style: square;
+}
+
+
+/*
+FOOTER
+*/
+
+footer {
+	padding: 5px 5px;
+	line-height: 50%;
+	font-size: .84em;
+}
+
+footer p {
+	display: block;
+}
+
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
+	display: inline;
+	float: left;
+	clear: both;
+}
+
+footer ul li {
+	display: inline;
+}
+
+footer ul li:nth-child(4n) {
+	margin-right: 0;
+}
+
+footer .fa {
+	font-size: 2em;
+	padding: 10px 15px;
+	background-color: #003655;
+	color: white;
+	border-radius: 15%;
+}
+
+footer .fa-facebook {
+	color: white;
+}
+
+footer .fa-facebook:hover {
+	transition: 1.75s;
+	background-color: #3b5998;
+}
+
+footer .fa-twitter:hover {
+	transition: 1.75s;
+	background-color: #55acee
+}
+
+footer .fa-envelope:hover {
+	transition: 1.75s;
+	background-color: #dd4b39;
+}
+
+footer .fa-phone:hover {
+	transition: 1.75s;
+	background-color: #bb0000;
+	/* alternate colors red #bb0000 green 4dc247 */
+}
+
+
+/*
+SIGN UP FORM
+*/
+
+form {
+	max-width: 90%;
+	background: #06f;
+	margin: 20px 5%;
+	text-align: center;
+	color: white;
+	padding: 10px;
+	font-size: 1.15em;
+	font-family: 'Old Standard TT', serif;
+}
+
+form h1{
+  font-size: 1.85em;
+	color: white;
+}
+
+form h2 {
+	text-decoration: underline;
+}
+
+form input, form select, form textarea {
+  margin: 10px 5px;
+}
+
+
+/*
+OFFICER PAGE
+*/
+
+.title {
+	text-decoration: underline;
+}
+
+.officer-box p{
+	font-size: 1.05em;
+}
+
+.officer-box h1 {
+	color: white;
+	font-size: 1.65em;
+}
+
+.officer-box h2 {
+	text-decoration: none;
+}
+
+/*
+CALENDAR
+*/
+
+#calendar-wrapper {
+	font-family: Verdana, sans-serif;
+}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #06f;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days .hasEvents {
+	background: blue;
+	padding: 5px;
+	color: white;
+}
+
+.days .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white;
+}
+
+.display {
+	display: block;
+}
+
+.active .display {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+li span {
+	display: none;
+}
+
+/* for desktop use
+
+li:hover span {
+	display: block;
+}
+
+.display span {
+	display: block;
+}
+
+*/
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:760px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+#howtouse-box li {
+	text-align: left;
+	list-style: square;
+}
+
+#howtouse-box {
+	display: none;
+}
+
+#calendar-events li {
+	text-align: left;
+	list-style: square;
+}
+
+.curly-font {
+	font-family: 'Merienda One', sans-serif;
+}
+
+
+/*
+GALLERY
+*/
+
+#gallery a {
+	text-decoration: none;
+}
+
+#gallery li img {
+	width: 100%;
+	max-height: 100%;
+}
+
+#gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#gallery li {
+	float: left;
+	width: 45%;
+	margin: 2.5%;
+	background-color: #06f;
+	color: black;
+}
+
+#gallery li a p {
+	margin: 0;
+	padding: 5%;
+	font-size: .85em;
+	color: white;
+}
+
+#gallery li:nth-child(5n) {
+	clear: left;
+}
+
+/*
+COMPETITION
+*/
+
+#extra-info {
+	display: none;
+}
+
+ /* Slideshow container */
+.slideshow-container, .slideshow-container2 {
+  max-width: 90%;
+  position: relative;
+  margin: 0 auto;
+  padding: 2.5%;
+  background-color: #06f;
+}
+
+.slideshow-container img, .slideshow-container2 img {
+	max-width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next, .next2 {
+  right: 2.75%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .next2:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#slideshow-container .active, .dot:hover, .dot-container .active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* 
+Cube css
+*/
+
+.container,
+.content {
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.container {
+	width: 94.02985075%;
+	padding: 0 2.25em 4em;
+	background: #fff;
+}
+
+.cube-container {
+	max-width: 200px;
+	text-align: center;
+	margin: 50px auto;
+}
+/* ---- Page Elements ---- */
+
+.name {
+	font-size: 1.65em;
+	font-weight: 800;
+	margin: 0 0 1.5em;
+	line-height: 1;
+}
+.name span {
+	font-weight: 300;
+	margin-left: -7px;
+}
+.logo {
+	width: 45px;
+	margin-bottom: .4em;
+	cursor: pointer;
+}
+.button {
+	font-size: .8em;
+	color: #fff;
+	width: 90%;
+	line-height: 1.15;
+	font-weight: 700;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: .95em 0;
+	border-radius: .5em;
+	background: rgba(74,137,202, .8);
+	margin: auto;
+}
+/* ---- Photo Overlay ---- */
+
+.photo-desc {
+	font-size: .85em;
+	color: #fff;
+	padding: 1.1em 1em 0;
+	background: #345d88;
+}
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 750px) {
+	.container {
+		max-width: 100%;
+		margin: 10px auto;
+	}
+	
+	.cube-container {
+		max-width: 50%;
+	}
+	
+	.cube-container:first-child {
+		float: left;
+		margin-left: 12.5%;
+	}
+	
+	.cube-container:last-child  {
+		float: right;
+		margin-right: 12.5%;
+	}
+}
+
+@media (min-width: 825px) {
+	.container {
+		margin: 10px auto;
+		max-width: 100%;
+	}
+	
+	.cube-container {
+		max-width: 50%;
+	}
+	
+	.cube-container:first-child {
+		float: left;
+		margin-left: 15%;
+	}
+	
+	.cube-container:last-child {
+		float: right;
+		margin-right: 15%;
+	}
+}
+
+@media (min-width: 1120px) {
+	.cube-container:first-child {
+		margin-left: 17.5%;
+	}
+	
+	.cube-container:last-child {
+		margin-right: 17.5%;
+	}
+}
+
+
+/* ================================= 
+  Button Transitions
+	(probably won't use buttons in end project)
+==================================== */
+
+.button {
+	transition: background .3s;
+}
+.button:hover {
+	background: rgba(74,137,202, 1);
+}
+
+/* ================================= 
+  Photo 3D Transforms & Transitions
+==================================== */
+
+.cube-container {
+	box-shadow: 0 18px 40px 5px rgba(0,0,0,.4);
+	perspective: 800px;
+}
+
+.photo-cube {
+	transition: transform 4s ease-in-out;
+	width: 220px;
+	height: 200px;
+	transform-style: preserve-3d;
+	
+}
+
+.photo-cube:hover {
+	transform: rotateY(-270deg);
+}
+
+.front,
+.back,
+.left,
+.right {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+}
+
+.front {
+	transform: translate3d(0, 0, 110px);
+}
+
+.back {
+	transform: translateZ(-110px) rotateY(270deg);
+	transform-origin: center left;
+}
+
+.left {
+	transform: rotateY(-270deg) translate3d(110px, 0, 0);
+	transform-origin: top right;
+}
+
+.right {
+	transform: translateZ(-110px) rotateY(180deg);
+}
+
+.container {
+	padding: 0;
+}

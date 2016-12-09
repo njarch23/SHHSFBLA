@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FBLA Website</title>
+		<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet"> 		
+		<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet" type="text/css"> 
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/responsive.css" rel="stylesheet" type="text/css">
+		<script src="https://use.fontawesome.com/4e54dbf978.js"></script>
+		<!-- <script src="myscripts.js"></script> -->
+	</head>
+	<body>
+	
+		<div id="wrapper">
+			<header>
+				<a href="index.html"><img id="logo" src="img/nav-logo.png" alt="shhs fbla logo"></a>
+				<nav>
+					<ul>
+						<div class="dropdown">
+							<li><img id="nav-bars" src="img/navigation-bars.png" alt="nav bars"></li>
+							<div class="dropdown-content">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="events.html">Calendar</a></li>
+									<li><a href="competition.html" class="active">Competitions</a></li>
+									<li><a href="officers.html">FBLA Leaders</a></li>
+									<li><a href="gallery.html">Gallery</a></li>
+									<li><a href="signup.html">Sign up</a></li>
+								</ul>
+							</div>
+						</div>
+				</nav>
+			</header>
+			
+			<div id="title-wrapper">
+				<p>FBLA Competitions</p>
+			</div>
+			
+			<div class="box" id="competitor-box">
+				<h2 class="title-font">We Are Competitors</h2>
+				<p>Our Scotts Hill FBLA chapter has been a constant force in the last few years in FBLA competitions. 
+				We have excelled at finding bright competitors that enjoy competition.  These competitors
+				have worked to be recognized on regional, state, and national levels at leadership conventions. 
+				Some of our most recognized competitors include Noah Archer, Abbey Rhodes, and 
+				Jacob Feehan.</p>
+			</div>
+			
+			<div class="slideshow-container2">
+			  <div class="mySlides fade">
+				<!-- <div class="numbertext">1 / 3</div> -->
+				<img src="img/2016-nationalists.png" style="width:100%">
+				<div class="text">Our 2015 - 2016 FBLA winners at SLC including Jacob Feehan, Abbey Rhodes, and Jeff Butler (from left to right)</div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<!-- <div class="numbertext">2 / 3</div> -->
+				<img src="img/2016-stategroup.png" style="width:100%">
+				<div class="text">The 2016 FBLA Tennessee State competitors from Scotts Hill.  
+					In the back from left to right, Josh Azbill, Abbey Rhodes, Zach Barnes, and Shelby Hafley.  
+					In the front from left to right, Noah Archer, Jacob Feehan, Megan Brantley, Feliciti Myracle, and Jeff Butler.
+				</div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<!-- <div class="numbertext">3 / 3</div> -->
+				<img src="img/2015-regional-winners.png" style="width:100%">
+				<div class="text">Scotts Hill 2015 regional winners of region 2 from left to right being Noah Archer, Lora Hill, Abbey Rhodes, and Chris Wood.</div>
+			  </div>
+
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next2" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+
+			<!-- dot container, may be used later
+			<div style="text-align:center" class="dot-container">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+			-->
+			
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+			</script>
+			
+			<div class="box" id="extra-info">
+				<h2 class="title-font">About SLC and NLC</h2>
+				<p>
+					SLC (State Leadership Conference) and NLC (National Leadership Conference) are events hosted by the national FBLA organization
+					that inspire students from all across the nation to compete in events that involve information related to business or techonology fields. 
+					These events help students get out and experience a competitive environment while having fun. Students must win at the previous level to advance to the 
+					next level of competition if they wish to go further in their event.  
+				</p>
+			</div>
+			
+			<div id="footer">
+				<footer>
+					<div class="footer-container">
+					
+						<p>&copy; 2017 Scotts Hill FBLA</p>
+						<ul>
+							<li><a href="http://facebook.com"><i class="footer-icon fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="http://twitter.com"><i class="footer-icon fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="mailto:fblascottshillhighschool@gmail.com"><i class="footer-icon fa fa-envelope" aria-hideen="true"></i></a></li>
+							<li><a href="tel:731-602-6112"><i class="footer-icon fa fa-phone" aria-hidden="true"></a></i></li>
+						</ul>
+						
+						<br><br><br><br><br><br>
+						<p style="text-align: right;">Scotts Hill High School</p>
+						<p style="text-align: right;">7871 Highway 100</p>
+						<p style="text-align: right;">Reagan, TN 38368</p>
+						<p style="text-align: right;">Phone: (731) 602 - 6112</p>
+						
+					</div> <!-- .footer-container -->
+				</footer>
+			</div> <!-- #footer -->
+		</div> <!-- #wrapper -->
+	</body>
+</html>
