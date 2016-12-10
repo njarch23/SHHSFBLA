@@ -692,6 +692,16 @@ Cube css
 	}
 }
 
+@media (min-width: 1280px) {
+	.cube-container:first-child {
+		margin-left: 22.5%;
+	}
+	
+	.cube-container:last-child {
+		margin-right: 22.5%;
+	}
+}
+
 
 /* ================================= 
   Button Transitions
